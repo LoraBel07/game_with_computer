@@ -19,7 +19,8 @@ body {
     background-color: rgb(255, 196, 0);       
     padding: 5px;
     border: black 2px solid;  
-    border-radius: 30px;  
+    border-radius: 30px; 
+    margin: 20px; 
 }
 h3 {
     align-self: center;

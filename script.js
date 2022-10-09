@@ -9,9 +9,9 @@ const stopMusic = document.querySelector(".stop");
 input.addEventListener("keypress", function(e) {
     if (e.keyCode === 13) {
         play();
-    };
+    }
     
-})
+});
 
 button.addEventListener("click", play);
 
@@ -25,7 +25,7 @@ function play() {
             icon: 'error',
             title: 'Oops!',
             text: 'Please enter a number from 1 to 20!',                
-        })
+        });
         input.value="";
     }
 

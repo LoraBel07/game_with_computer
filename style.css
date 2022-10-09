@@ -7,7 +7,7 @@ body {
     background-image: url(smiley.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    max-height: 100vh;
     background-position: center top;
     background-color: rgb(212, 238, 247);
 }

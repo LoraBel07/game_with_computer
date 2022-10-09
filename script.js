@@ -1,3 +1,8 @@
+gsap.from(".input", {x:-200, delay:.5, duration: 1, opacity: 0});
+gsap.from(".goahead", {x: 200, delay:.5,duration:1, opacity:0});
+
+
+
 const input = document.querySelector("#guess");
 const button = document.querySelector("#btn");
 const answer = Math.floor(Math.random()*20)+1;
@@ -34,7 +39,7 @@ function play() {
             icon: 'error',
             title: 'Oops!',
             text: 'You have to enter a number!',             
-        })
+        });
         input.value="";
         
     }
@@ -58,7 +63,7 @@ function play() {
                 imageWidth: 320,
                 imageHeight: 300,
                 imageAlt: 'Never give up!',
-            })  
+            });  
             input.value="";  
             document.querySelector('#myAudio').play();
         }
@@ -68,7 +73,7 @@ function play() {
     }
 }
 
-buttonNew.addEventListener("click", ()=>{
+buttonNew.addEventListener("click", () =>{
     document.location.reload();    
 });
 stopMusic.addEventListener("click", ()=>{

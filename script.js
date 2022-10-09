@@ -10,25 +10,10 @@ input.addEventListener("keypress", function(e) {
     if (e.keyCode === 13) {
         play();
     };
-    // const stop = document.querySelector(".stop").classList.remove("opacity");
-    // const song = document.querySelector("#myAudio");
-    // song.pause();
+    
 })
 
 button.addEventListener("click", play);
-
-// 1 - доступ к числу пользователя
-// 2 - убрать возм.ввести число <1 и >20
-// 3 - только цифры!!!
-// 4 - команда генерировать число
-// 5 - если введено ниже - введи выше
-// 6 - если введено выше - введи ниже
-// 7 - если равно - победа!
-// 8 - подключаем кнопку Enter (#13)
-// 9 - освобождаем поле после каждой проверки
-// 10 - добавила музыку в связке с победой
-// 11 - добавила кнопку новая игра
-// 12 - прицепила к ней остановку музыки и перезагрузку страницы
 
 
 function play() {
@@ -38,8 +23,8 @@ function play() {
     if (userNumber < 1 || userNumber > 20) {
         Swal.fire({
             icon: 'error',
-            title: 'Ой!',
-            text: 'Введи число от 1 до 20!',                
+            title: 'Oops!',
+            text: 'Please enter a number from 1 to 20!',                
         })
         input.value="";
     }
@@ -47,8 +32,8 @@ function play() {
     else if (isNaN(userNumber)) {
         Swal.fire({
             icon: 'error',
-            title: 'Ой!',
-            text: 'Нужно ввести число!',             
+            title: 'Oops!',
+            text: 'You have to enter a number!',             
         })
         input.value="";
         
@@ -56,19 +41,19 @@ function play() {
 
     else {
         if (userNumber < answer) {
-            Swal.fire('Мало! Попробуй ещё раз!',
-            'Не сдавайся!');  
+            Swal.fire('Few! Try again!',
+            "Don't give up!");  
             input.value="";         
             
         }
         else if (userNumber > answer) {
-            Swal.fire('Много! Попробуй ещё раз!',
-            'Не сдавайся!');  
+            Swal.fire('A lot of! Try again!',
+            "Don't give up!");  
             input.value="";          
         }
         else {
             Swal.fire({
-                title: 'УРА!!! Победа!!!',                
+                title: 'Win!!! Congratulations!!!',                
                 imageUrl: 'https://i.gifer.com/S5q.gif',
                 imageWidth: 320,
                 imageHeight: 300,

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="myAudio" src="little_party.mp3" loop="loop" autoplay="allowed"></audio>
+    <div id="container">
+        <h3>Введи число от 1 до 20!</h3>
+        <h3>Кто победит: ты или компьютер?</h3>
+        
+    </div><br>
+
+    <div class="activ">
+        <div class="input">
+            <input type="text" placeholder="Введите число..." id="guess"><br>
+        </div>
+        <div class="goahead">
+            <button id="btn">И Г Р А Т Ь !</button>
+        </div>
+    </div>
+    
+    <div class="newstart">
+        <div class="stop">
+            <img src="https://img.icons8.com/clouds/150/ffffff/circled-pause.png"/>
+        </div>
+    </div>
+
+    <div class="newstart">
+        <div class="goahead">
+            <button id="btnNew">НОВАЯ ИГРА</button>
+        </div>
+        
+    </div>
+    
+    
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>

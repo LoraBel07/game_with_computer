@@ -1,0 +1,114 @@
+body {
+    background-image: url(smiley.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-position: center top;
+    background-color: rgb(212, 238, 247);
+}
+#container {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex: 1;
+    background-color: rgb(255, 196, 0);       
+    padding: 5px;
+    border: black 2px solid;  
+    border-radius: 30px;  
+}
+h3 {
+    align-self: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 18px;
+}
+.activ {
+    display: flex;
+    align-content: center;
+    justify-content:space-around;    
+}
+
+.newstart {
+    display: flex;    
+    justify-content: center; 
+    
+}
+
+.input, .goahead {
+    align-self: center;
+    background-color: rgb(255, 196, 0);    
+    padding: 5px;
+    border: black 2px solid;
+    border-radius: 30px;
+    width: 21%;
+    height: 100px;
+}
+
+    
+#guess {
+    width: 90%;
+    height: 90%;
+    /* align-self: center; */
+    /* justify-self: center; */
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    border-radius: 30px;
+    margin-left: 5px;
+}
+
+#btn, #btnNew {
+    background-color: rgb(125, 230, 238);
+    width: 90%;
+    height: 90%;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 13px;
+    border-radius: 30px;
+    margin-left: 5px;
+}
+.stop {
+    align-self: center;
+    margin-top: 30px;
+}
+
+
+@media all and (max-width: 800px) {
+    .input, .goahead {
+        width: 30%;
+        height: 150px;
+    }   
+    #btn, #btnNew {
+        font-size: 12px;
+    } 
+    .newstart, .stop {
+        margin-top: 50px;
+    }
+}
+
+@media all and (max-width: 760px) {
+    h3 {
+        font-size: 15px;
+    }    
+    
+    #btn, #guess, #btnNew {
+        font-size: 8px;
+    } 
+    .newstart {
+        margin-top: 190px;
+    }
+}
+@media all and (max-width: 600px) {
+    h3 {
+        font-size: 11px;
+    }  
+    .input, .goahead {
+        width: 45%;
+        height: 90px;
+    } 
+    .newstart, .stop {
+        margin-top: 70px;
+    }
+
+    #btn, #guess, #btnNew {
+        font-size: 8px;
+    }   
+}
+

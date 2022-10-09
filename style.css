@@ -1,6 +1,6 @@
 * {
 	box-sizing: border-box;
-    /* padding: 0; */
+    padding: 0;
 	margin: 0;
 }
 body {
@@ -17,10 +17,11 @@ body {
     flex-direction: column;
     flex: 1;
     background-color: rgb(255, 196, 0);       
-    padding: 5px;
+    padding: 10px;
     border: black 2px solid;  
     border-radius: 30px; 
     margin: 20px; 
+    height: 50px;
 }
 h3 {
     align-self: center;

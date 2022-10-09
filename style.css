@@ -1,3 +1,6 @@
+* {
+	box-sizing: border-box;
+}
 body {
     background-image: url(smiley.jpg);
     background-size: cover;
